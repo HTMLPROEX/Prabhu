@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+<style>
+.button {
+  border: inset;
+  background-color:green;
+  color:yellow;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: italic;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.bg-img {
+  /* The image used */
+  background-image: url("https://careerworldedu.org/storage/files/in/647/thumb-816x460-089476983c9eb43ef471774c50944506.jpeg");
+
+  min-height: 180px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>LEAVE FORM</h3>
+
+
+<div class="bg-img">
+  <form action="/action_page.php">
+    <label for="name"> Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="roll no">ROLL NO</label>
+    <input type="text" id="roll no" name="roll no" placeholder="Your roll no..">
+	 <label for="branch">BRANCH</label>
+    <input type="text" id="branch" name="branch" placeholder="Your Department..">
+	 <label for="year">YEAR</label>
+    <input type="text" id="year" name="year" placeholder="which year..">
+	 <label for="section">SECTION</label>
+    <input type="text" id="section" name="section" placeholder="Your section..">
+    <label for="from date">FROM DATE</label>
+    <input type="text" id="from date" name="from date " placeholder=" from which date to..">
+	 <label for="to date">TO DATE</label>
+    <input type="text" id="to date" name="to date " placeholder=" to which date ..">
+
+    <label for="reason">REASON</label>
+    <textarea id="reason" name="reason" placeholder="Write something.." style="height:200px"></textarea>
+
+    
+  </form>
+   <a href="send to.html">
+
+  <button class="button button1">CREATE PDF</button>
+</div>
+
+</body>
+</html>
